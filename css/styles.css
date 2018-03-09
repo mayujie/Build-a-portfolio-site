@@ -7,7 +7,7 @@ body ,html {
 
 
 body {
-	font: 22px Roboto;
+	font: 22px fantasy;
 	color: #2d3c49;
 }
 
@@ -18,9 +18,9 @@ header{
 	flex-direction: column;
 	max-width: 100%;
 	width: 900px;
-	/* height: 150px; */
+	height: 150px;
 	background-color: #fff;
-	/* border-bottom: 5px solid #7d97ad; */
+	border-bottom: 5px solid #7d97ad;
 	clear: both;
 }
 
@@ -28,7 +28,7 @@ header{
 #udacity img {
 	margin: 25px 10px;
 	border-radius: 25% 10%;;
-	height: auto;
+	height: 100px;
 	width: 100px;
 	box-shadow: 5px 5px 10px #aaa;
 	transition: background-color .5s;
@@ -45,22 +45,15 @@ header{
 	margin-left: auto;
 	text-align: right;
 	padding: 0 20px;
-	/* margin: -10px; */
+	margin: -10px;
 	color: #09f;
 }
 
-hr {
-    height: 1px;
-    border-color: #7d97ad;
-    background-color: #7d97ad;
-    width: 80%;
-    margin-top: -10px;
-}
 
 #udacity-view {
 	background: no-repeat center/cover url("../image/center.png");
-	width: 60%;
-	min-height: 320px;
+	width: 900px;
+	height: 320px;
 	margin-top: 10px;
 	max-width: 100%;
 	text-align: center;	
@@ -116,7 +109,7 @@ hr {
 
 .chunk img {
 	overflow: visible;
-	height:210px;
+	height:200px;
 	width: 100%;
 }
 
@@ -169,17 +162,6 @@ footer img {
 		text-align: center;
 	}
 
-	#header-title {
-		margin: -35px 5px;
-	}
-
-	#udacity-view {
-		height: 150px;
-		width: 80%;
-		font-size: 1em;
-		line-height: 150px;
-	}
-
 	.style-card {
 		min-width: 40%;
 		max-width: 50%;
@@ -202,7 +184,6 @@ footer img {
 
 	#udacity-view {
 		height: 150px;
-		width: 80%;
 		font-size: 1em;
 		line-height: 150px;
 	}
@@ -214,19 +195,18 @@ footer img {
 	}
 
 	header {
-		height: 100px;
+		height: 120px;
 		background-color: #fff;
-		/* border-bottom: 5px solid #cca; */
+		border-bottom: 3px solid #7d97ad;
 	}
 
 	#header-title {
-		padding: 0 50px;
-		margin: -35px 1px;
-
+		margin: -30px 1px;
+		/* margin: 0; */
 	}
 
 	.style-card {
-		min-width:90%;
+		min-width:96%;
 	}
 	
 	.chunk {
