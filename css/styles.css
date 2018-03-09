@@ -7,13 +7,14 @@ body ,html {
 
 
 body {
-	font: 22px fantasy;
+	font: 20px fantasy;
 	color: #2d3c49;
 }
 
 
 header{
 	display: flex;
+    justify-content: flex-start;
 	flex-wrap: wrap;
 	flex-direction: column;
 	max-width: 100%;
@@ -94,10 +95,10 @@ header{
 
 .style-card {
 	box-shadow: 2px 2px 4px 0 #02b3e4;
-	width: 29%;
+	width: 30%;
 	text-align: center;
 	margin: 10px;
-	padding: 5px;
+	padding: 10px;
 	display: inline-flex;
 	flex-wrap: wrap;
 	flex: 1;
@@ -111,6 +112,7 @@ header{
 	overflow: visible;
 	height:200px;
 	width: 100%;
+	object-fit: fill;
 }
 
 .chunk p {
@@ -156,7 +158,7 @@ footer img {
 }
 
 /* breakpoints */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 	#content {
 		flex-wrap: wrap;
 		text-align: center;
@@ -174,13 +176,18 @@ footer img {
 		font-size: 1em;
 	}
 
+	.chunk img {
+		height: 250px;
+		object-fit: fill;
+	}
+
 	.feature-work {
 		font-size: 1em;
 	}
 
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 700px) {
 
 	#udacity-view {
 		height: 150px;
@@ -195,6 +202,7 @@ footer img {
 	}
 
 	header {
+		display: flex;
 		height: 120px;
 		background-color: #fff;
 		border-bottom: 3px solid #7d97ad;
@@ -206,11 +214,17 @@ footer img {
 	}
 
 	.style-card {
-		min-width:96%;
+		min-width:70%;
 	}
 	
 	.chunk {
 		width:100%;
+	}
+
+	.chunk img{
+		height:250px;
+		/* width: 100%; */
+		object-fit: fill;
 	}
 
 	.chunk p {
